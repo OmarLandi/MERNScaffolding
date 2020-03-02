@@ -2,8 +2,6 @@ import swaggerJsdoc from 'swagger-jsdoc';
 
 const host = process.env.API_URL;
 
-console.log(host);
-
 const options = {
   swaggerDefinition: {
     // Like the one described here: https://swagger.io/specification/#infoObject

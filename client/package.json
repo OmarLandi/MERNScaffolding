@@ -2,24 +2,36 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "lint": "eslint ./",
+    "test": "jest -i --verbose --coverage --runInBand",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
     "font-awesome": "^4.7.0",
+    "formik": "^2.1.4",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.0",
+    "yup": "^0.28.1"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/register": "^7.8.6",
+    "eslint": "^6.8.0",
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.2"
   },
   "eslintConfig": {
     "extends": "react-app"

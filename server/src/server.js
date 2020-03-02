@@ -7,8 +7,6 @@ import swaggerUi from 'swagger-ui-express'
 import SwaggerSpecs from './routes/swaggerJsDoc'
 import router from './routes/exampleRoute'
 
-console.log(SwaggerSpecs);
-
 const app = express();
 const PORT = process.env.PORT || 4000;
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/mern';

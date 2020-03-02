@@ -73,13 +73,18 @@ router.post('/add',function(req, res) {
   }
 
   let example = new Example(req.body);
+
+  let validation = example.serverValidate(req.body)
+
+  if (validation.error) {
+    return res.status(400).send(validation.error.details);
+  }
+
   example.save()
     .then(result => {
-      console.log(result);
       return res.status(200).json({'example': 'Example added successfully'});
     })
     .catch(err => {
-      console.log(err);
       return res.status(400).send('New Example failed');
     });
 });

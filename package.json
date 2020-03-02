@@ -1,0 +1,38 @@
+{
+  "name": "MERNScaffolding",
+  "version": "1.0.0",
+  "description": "## Front:",
+  "main": "./server/start.js",
+  "scripts": {
+    "install": "concurrently \"npm install --no-optional --prefix client\" \"npm install --no-optional --prefix server\"",
+    "server": "nodemon start --prefix server",
+    "client": "npm start --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/register": "^7.8.6",
+    "eslint": "^6.8.0",
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.2"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OmarLandi/MERNScaffolding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OmarLandi/MERNScaffolding/issues"
+  },
+  "homepage": "https://github.com/OmarLandi/MERNScaffolding#readme"
+}
